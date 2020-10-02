@@ -12,3 +12,19 @@
 .card-text{
     font-weight: 600;
 }
+span.child:hover{
+    
+    font-weight: 800;
+}
+span.child{
+    font-size: 130%;
+    color: grey;
+    font-weight: 400;
+}
+.sidebar-brand-icon{
+    height:50px;
+    width: 160px;
+    padding-top: 10px;
+    border-radius: 4px;
+    background-color: #ffe0e0; 
+}
