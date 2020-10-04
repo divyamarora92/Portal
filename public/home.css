@@ -28,3 +28,95 @@ span.child{
     border-radius: 4px;
     background-color: #ffe0e0; 
 }
+body{
+     background-color: white;
+}
+.box{
+    margin-top: 100px;
+    margin-left: 12%;
+    height: 550px;
+    width: 75%;
+    
+}
+.cardlogin{
+    height: 550px;
+    width: 100%;
+}
+.c1{
+    border: 1px solid orange;
+    height: 70px;
+    width:30%;
+    padding-left: -20px;
+    color: orangered;
+    
+}
+.c2{
+    border: 1px solid ;
+    height: 70px;
+    width:30%;
+    color: blue;
+    
+}
+
+.l1{
+    font-size: 150%;
+    color: orangered;
+    font-weight: 800;
+    
+   
+}
+.l2{
+    font-size: 150%;
+    color: blue;
+    font-weight: 800;
+    
+   
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid orangered;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: orangered;
+  color: white;
+  padding: 14px 20px;
+  margin: 16px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: orangered;
+   
+}
+
+.lform{
+  border-radius: 5px;
+  background-color: White;
+  
+}
+.l2form{
+  border-radius: 5px;
+  background-color: White;
+  
+}
+label{
+    color: orangered;
+}
+.s1{
+    color: blue;
+    
+}
+.s2{
+    color: orangered;
+    
+}

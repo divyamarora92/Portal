@@ -30,7 +30,8 @@
                 <hr class="sidebar-divider my-0">
                 <ul class="nav navbar-nav text-primary " id="accordionSidebar" >
                      <li class="nav-item"><a class="nav-link " href="index.html"><i class="fas fa-tachometer-alt mr-2 ml-4" style="color: blue; font-size: 120%" ></i><span class="child"><b>Dashboard</b></span></a></li>
-                   
+                   <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-user-friends mr-2 ml-4" style="color: blue; font-size: 120%"></i><span  class="child"><b>Faculties</b></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-book-open mr-2 ml-4" style="color: blue; font-size: 120%"></i><span  class="child" ><b>Classes</b></span></a></li>
                     
                     
                     <li class="nav-item"><a class="nav-link" href="profile.html"><i class="far fa-comment-alt mr-2 ml-4" style="color: blue; font-size: 120%"></i><span class="child" ><b>Chats</b></span></a></li>
@@ -48,7 +49,7 @@
         
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
-            <div class="container-fluid" style="margin-left: -12px">
+            <div class="container-fluid" style="background-color: white; ">
                 <div class="row">
                     <div class="col-sm-9" style="background-color: whitesmoke; ">
                         <br>
@@ -56,7 +57,7 @@
                         <h4><b>Dashboard</b></h4>
                         <div class="card" style="background-color:#dfe1f5">
                             <div class=row>
-                            <div class="card-body d1 col-sm-8"><h3 style="font-weight: 900;color: #0080ff=">Welcome Amar Singh!</h3>Please check your dashboard for further operations</div>
+                            <div class="card-body d1 col-sm-8"><h3 style="font-weight: 900;color: #0080ff">Welcome Amar Singh!</h3>Please check your dashboard for further operations</div>
                                 <div class="col-sm-4"><img class="img-responsive" style="height:150px;width:200px;float:right" src="img/upteacher.jpeg"></div>
                             </div>
                         </div>
@@ -103,69 +104,102 @@
                                 </div>
                             </div>
                         </div><br>
+                        <h5><b>Submission</b></h5>
                         <div class="row">
-                            <div class="col-sm-4">
-                                <h5><b>Submission</b></h5>
-                                <button type="button" class="btn btn-outline-primary btn-block" style="background-color: white"><h4 style="font-weight: 800;color:#00ccff;">Assingments</h4></button>
-                                <button type="button" class="btn btn-outline-primary btn-block" style="background-color: white"><h4  style="font-weight: 800;color: #f20781">Experiments</h4></button>
-                                <button type="button" class="btn btn-outline-primary btn-block" style="background-color: white"><h4  style="font-weight: 800;color:#32a89d">Quizes</h4></button>
                             
+                            <div class="col-sm-4">
+                                
+                                <button type="button" class="btn btn-outline-primary btn-block pt-3" style="background-color: white"><h4 style="font-weight: 800;color:#00ccff;">Assingments</h4></button>
                             </div>
                             <div class="col-sm-4">
-                                <h5><b>Attendance</b></h5>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="card" style="height: 150px">
+                                <button type="button" class="btn btn-outline-danger btn-block pt-3" style="background-color: white"><h4  style="font-weight: 800;color: #f20781">Experiments</h4></button>
+                            </div>
+                            <div class="col-sm-4">
+                                <button type="button" class="btn btn-outline-primary btn-block pt-3" style="background-color: white"><h4  style="font-weight: 800;color:#32a89d">Quizes</h4></button>
+                            
+                            </div>
+                        </div>
+                        <br>
+                        <h5><b>Attendance</b></h5>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                    <div class="card pt-2 " style="height: 150px">
                                             <h5 align="center" style="font-weight: 800;color:#32a89d">Upload Attendance</h5>
                                             <img style="padding-top: 10px" src="img/attendance.svg">
-                                        </div>
+                                    </div>
                                         
                                     </div>
-                                    <div class="col-sm-6">
-                                        <div class="card" style="height: 150px">
+                                    <div class="col-sm-4">
+                                        <div class="card pt-2" style="height: 150px">
                                             <h5 align="center" style="font-weight: 800;color:#00ccff">Update Attendance</h5>
                                             <img style="padding-top: 10px" src="img/update%20attendance.svg">
                                             
                                         </div>
                                         
                                     </div>
-                                </div>
+                                   
                             
-                            </div>
-                            <div class="col-sm-4">
-                                <h5><b>Exams</b></h5>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="card" style="height: 150px">
-                                            <h5 align="center" style="font-weight: 800;padding-top:10px;color: #ffb300">Upload Test Papers</h5>
-                                            <img style="padding-top:10px" src="img/testpaper.svg">
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="card" style="height: 150px">
-                                            <h5 align="center" style="font-weight: 800;padding-top:20px;color: #d4aded">Test Results</h5>
+                                </div>
+                            <br>
+                           <h5><b>Exams</b></h5>
+                        
+                        <div class="row">
+                                <div class="col-sm-4">
+                                        <div class="card pt-2" style="height: 150px">
+                                            <h5 align="center" style="font-weight: 800; color: #d4aded">Test <br>Results</h5>
                                             <img style="padding-top: 20px" src="img/testresults.svg">
                                             
                                         </div>
                                         
                                     </div>
+                             <div class="col-sm-4">
+                                
+                                
+                                        <div class="card pt-2" style="height: 150px">
+                                            <h5 align="center" style="font-weight: 800; color: #ffb300">Upload <br>Test Papers</h5>
+                                            <img style="padding-top:10px" src="img/testpaper.svg">
+                                        </div>
+                                        
+                                    </div>
                                 </div>
-                            </div>
+                            
                         
-                        </div>
+                        
                     </div>
 
                     <div class="col-sm-3 " style="color: black; background-color: white;">
-                        <img src="img/teacher1.png" height="100px" width="100px" style="border:5px solid #2fa388" class="rounded-circle mx-auto d-block mt-5" align="center" alt="KIET"><br>
+                        <img src="img/kiet%20logo.png" height="100px" width="100px" style="border:5px solid #2fa388" class="rounded-circle mx-auto d-block mt-5" align="center" alt="KIET"><br>
                         <h5 align="center"><b>KIET Group of Institutions</b></h5>
                         <h6 align="center"><a href="#" ><em>www.kiet.edu</em></a></h6><br>
-                    </div>
-                </div>
+                        <div class="card ml-1 mr-1">
+                            <div class="card-body pr-3 pl-3 " style="background-color:lightgrey">
+                                <h5 align="center"><em><b>Upcoming Events</b></em></h5><br>
+                                <ol>
+                                    
+                                    <li></li>
+                                    <hr>
+                                    <li></li>
+                                    <hr>
+                                    <li></li>
+                                    <hr>
+                                    <li></li>
+                                  
+                                    
+                                </ol>
+                            </div>
+                            
+                        </div>
+                       
+                    
                 
             </div>
         </div>
-    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+                </div>
+            
+            </div>
+    </div>
+    
+        <a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
