@@ -20,11 +20,11 @@
     <div class="box" >
     <div class="row">
         <div class="col-sm-6">
-            <img src="img/loginlogo.jpeg" height="550px" width="100%;">
+            <img src="img/loginlogo.jpeg" height="630px" width="100%;">
         
         </div>
         <div class="col-sm-6" >
-            <div class="card cardlogin pt-3 pl-5 pr-5 pb-5" style="background-color:white">
+            <div class="card cardlogin pt-3 pl-5 pr-5 pb-5" style="background-color:white; display: block;" id="display0">
                 <div class="row">
                     <button class="col-sm-6 c1 pt-2" onclick="studentlogin()" >
                         <img src="img/student.svg" height="40px" width="40px">
@@ -49,7 +49,7 @@
                     <br>
                     <input type="submit" value="Log In">
                 </form>
-                        <center><h6 style="color: orangered;">Dont have an account ?<span class="s1 ml-1"><b>Sign up</b></span></h6>
+                        <center><h6 style="color: orangered;">Dont have an account ?<span class="s1 ml-1"><b><a href="#" onclick="signup()">Sign up</a></b></span></h6>
                             <h6 class="s1"><b><i>Forgot Your Password?</i></b></h6>
                         </center>
                     </div>
@@ -67,11 +67,88 @@
                     <br>
                     <input type="submit" value="Log In" style="background-color: blue">
                 </form>
-                        <center><h6 style="color:blue;">Dont have an account ?<span class="s2 ml-1"><b>Sign up</b></span></h6>
+                        <center><h6 style="color:blue;">Dont have an account ?<span class="s2 ml-1"><b><a href="#" onclick="signup2()">Sign up</a></b></span></h6>
                             <h6 class="s2"><b><i>Forgot Your Password?</i></b></h6>
                         </center>
                     </div>
                 </div>
+            </div>
+            
+            <div class="card cardlogin pt-4  pl-5 pr-5 pb-5" style="background-color:white; display: none" id="studentsignin">
+                <center><img src="img/student.svg" height="40px" width="40px">
+                        <span class="head l1 ml-2 mt-5"><b>STUDENT REGISTRATION</b></span>
+                </center>
+                <br>
+                <div class="row lform" >
+                    <div class="col-sm-12 p-0">
+                <form action="/action_page.php">
+                    <label for="fname"><b>Enter your Roll no</b></label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter Your 8 digit Roll no">
+                    <br>
+                    <div class="row">
+                    <div class="col-sm-6">
+                    <label for="fname"><b>First Name</b></label>
+                    <input type="text" id="fname" name="lastname" placeholder="Enter Your First Name">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="lname"><b>Last Name</b></label>
+                        <input type="text" id="lname" name="firstname" placeholder="Enter Your Second Name">
+                    </div>
+                    </div>
+                    <label for="lname"><b>Password</b></label>
+                    <input type="password" id="lname" name="lastname" placeholder="Choose Your password">
+                    <label for="lname"><b>Confirm Password</b></label>
+                    <input type="password" id="lname" name="lastname" placeholder="Re-enter Your password">
+                    <br>
+                    
+                    <input type="submit" value="Sign In">
+                </form>
+                        <center><h6 style="color: orangered;">Do you already have an account?<span class="s1 ml-1"><b><a href="#"  onclick="logins()">Log in</a></b></span></h6></center>
+                       
+                    </div>
+                </div>
+                
+                        
+                
+                
+            </div>
+            <div class="card cardlogin pt-4  pl-5 pr-5 pb-5" style="background-color:white; display: none" id="teachersignin">
+                <center><img src="img/teacher.svg" height="40px" width="40px">
+                        <span class="head l2 ml-2 mt-5"><b>TEACHER REGISTRATION</b></span>
+                </center>
+                <br>
+                <div class="row lform" >
+                    <div class="col-sm-12 p-0">
+                <form action="/action_page.php">
+                    <label for="fname" style="color: blue;"><b>Enter your Roll no</b></label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter Your 8 digit Roll no" style="border: 1px solid blue">
+                    <br>
+                    <div class="row">
+                    <div class="col-sm-6">
+                    <label for="fname" style="color: blue;"><b>First Name</b></label>
+                    <input type="text" id="fname" name="lastname" placeholder="Enter Your First Name" style="border: 1px solid blue">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="lname" style="color: blue;"><b>Last Name</b></label>
+                        <input type="text" id="lname" name="firstname" placeholder="Enter Your Second Name" style="border: 1px solid blue">
+                    </div>
+                    </div>
+                    <label for="lname" style="color: blue;"><b>Password</b></label>
+                    <input type="password" id="lname" name="lastname" placeholder="Choose Your password" style="border: 1px solid blue">
+                    <label for="lname" style="color: blue;"><b>Confirm Password</b></label>
+                    <input type="password" id="lname" name="lastname" placeholder="Re-enter Your password" style="border: 1px solid blue">
+                    <br>
+                    
+                    <input type="submit" value="Sign In" style="background-color: blue">
+                </form>
+                        <center><h6 style="color: blue;">Do you already have an account?<span class="s2 ml-1"><b><a href="#" onclick="logint()">Log in</a></b></span></h6></center>
+                       
+                    </div>
+                </div>
+                
+                        
+                
+                
             </div>
         
         </div>
