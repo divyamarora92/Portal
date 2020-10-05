@@ -10,6 +10,7 @@ studentRegisterForm.addEventListener('submit', (e) => {
     const repassword = studentRegisterForm.repassword.value;
     const fname = studentRegisterForm.firstname.value;
     const lname = studentRegisterForm.lastname.value;
+    const name = fname+" "+lname;
 
     if(password !== repassword){
         studentRegisterForm.querySelector('.error').textContent = "Password does not match";
@@ -18,16 +19,26 @@ studentRegisterForm.addEventListener('submit', (e) => {
     if(password.length < 6){
         studentRegisterForm.querySelector('.error').textContent = "Password should not be less than 6 characters";
     }
-
-    firebase.auth().createUserWithEmailAndPassword(email, password)
-      .then(user => {
-        console.log('registered', user);
-        studentRegisterForm.reset();
-        
+      //user firebase using the appropriate firebase method
+      firebase.auth().createUserWithEmailAndPassword(email, password)
+      .then(() => {
+          //Once the user creation has happened successfully, we can add the currentUser into firestore
+          //with the appropriate details.
+          firebase.firestore().collection('students').doc(firebase.auth().currentUser.uid)
+          .set({
+              name: name,
+              email: email,
+          }).then(() => window.location.href = "index.html")
+          //ensure we catch any errors at this stage to advise us if something does go wrong
+          .catch(error => {
+              console.log('Something went wrong with added user to firestore: ', error);
+          })
       })
+      //we need to catch the whole sign up process if it fails too.
       .catch(error => {
-        studentRegisterForm.querySelector('.error').textContent = error.message;
-      });
+          console.log('Something went wrong with sign up: ', error);
+      }
+      )
   });
 
 
@@ -50,6 +61,8 @@ studentLoginForm.addEventListener('submit', (e) => {
       });
   });
 
+  // checking if already logged in
+
   // firebase.auth().onAuthStateChanged(user => {
   //   if (user) {
   //      window.location.href = "home.html";
@@ -59,8 +72,3 @@ studentLoginForm.addEventListener('submit', (e) => {
   // });
 
 
-//   sign out
-// signOut.addEventListener('click', () => {
-//     firebase.auth().signOut()
-//       .then(() => console.log('signed out'));
-//   });
