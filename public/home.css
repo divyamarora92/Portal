@@ -120,3 +120,50 @@ label{
     color: orangered;
     
 }
+.btnw{
+    border-radius: 25px;
+    background-color: #33de8b;
+    color: white;
+    
+}
+.btnw2{
+    border-radius: 25px;
+    background-color: #13ccd6;
+    color: white;
+    
+}
+.exps{
+    height: 110px;
+    width: 60%;
+    background-color: #d4ffe3;
+    border-radius: 5px;
+}
+.scrollbar{
+    overflow-y: scroll;
+    height: 450px;
+}
+#prevlectures{
+    overflow-y: scroll;
+    height: 200px;
+}
+
+.scrollbar::-webkit-scrollbar,#prevlectures::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.scrollbar::-webkit-scrollbar-track, #prevlectures::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 2px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.scrollbar::-webkit-scrollbar-thumb,#prevlectures::-webkit-scrollbar-thumb {
+  background-color: gainsboro;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.scrollbar::-webkit-scrollbar-thumb:hover,#prevlectures::-webkit-scrollbar-thumb:hover {
+  background: ; 
+}
