@@ -43,31 +43,31 @@ body{
     width: 100%;
 }
 .c1{
-    border: 1px solid orange;
+    border: 2px solid #e88935;
     height: 70px;
     width:30%;
     padding-left: -20px;
-    color: orangered;
+    color: #e88935;
     
 }
 .c2{
-    border: 1px solid ;
+    border: 2px solid #55b0e6;
     height: 70px;
     width:30%;
-    color: blue;
+    color: #55b0e6;
     
 }
 
 .l1{
     font-size: 150%;
-    color: orangered;
+    color: #e88935;
     font-weight: 800;
     
    
 }
 .l2{
     font-size: 150%;
-    color: blue;
+    color: #55b0e6;
     font-weight: 800;
     
    
@@ -78,14 +78,14 @@ input[type=text], input[type=password],select {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid orangered;
+  border: 1px solid #e88935;
   border-radius: 4px;
   box-sizing: border-box;
 }
 
 input[type=submit] {
   width: 100%;
-  background-color: orangered;
+  background-color: #e88935;
   color: white;
   padding: 14px 20px;
   margin: 16px 0;
@@ -95,9 +95,17 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: orangered;
+  background-color: #e88935;
+    
    
 }
+.sbtn:hover{
+    border: 3px solid #e88935;
+}
+.tbtn:hover{
+     border: 3px solid #55b0e6;
+}
+
 
 .lform{
   border-radius: 5px;
@@ -110,13 +118,60 @@ input[type=submit]:hover {
   
 }
 label{
-    color: orangered;
+    color: #e88935;
 }
 .s1{
-    color: blue;
+    color: #55b0e6;
     
 }
 .s2{
-    color: orangered;
+    color: #e88935;
     
+}
+.btnw{
+    border-radius: 25px;
+    background-color: #33de8b;
+    color: white;
+    
+}
+.btnw2{
+    border-radius: 25px;
+    background-color: #13ccd6;
+    color: white;
+    
+}
+.exps{
+    height: 110px;
+    width: 60%;
+    background-color: #d4ffe3;
+    border-radius: 5px;
+}
+.scrollbar{
+    overflow-y: scroll;
+    height: 450px;
+}
+#prevlectures{
+    overflow-y: scroll;
+    height: 200px;
+}
+
+.scrollbar::-webkit-scrollbar,#prevlectures::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.scrollbar::-webkit-scrollbar-track, #prevlectures::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 2px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.scrollbar::-webkit-scrollbar-thumb,#prevlectures::-webkit-scrollbar-thumb {
+  background-color: gainsboro;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.scrollbar::-webkit-scrollbar-thumb:hover,#prevlectures::-webkit-scrollbar-thumb:hover {
+  background: ; 
 }
