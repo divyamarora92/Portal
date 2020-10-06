@@ -39,7 +39,7 @@
                     <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user mr-2 ml-4" style="color: blue; font-size: 120%"></i><span class="child" ><b>Profiles</b></span></a></li>
                 </ul>
 <!--                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>-->
-                <div class="text-center" style="font-weight: 900; margin-top: 80px;"><a href="#"><button type="button" class="btn btn-outline-primary"><b>Sign out</b><img src="https://img.icons8.com/officexs/30/000000/logout-rounded.png" style="margin-left: 5px"/></button></a>
+              <div class = "signout"><div class="text-center" style="font-weight: 900; margin-top: 80px;"><a href="#"><button type="button" class="btn btn-outline-primary" onclick="signOut()"><b>Sign out</b><img src="https://img.icons8.com/officexs/30/000000/logout-rounded.png" style="margin-left: 5px"/></button></a></div>
 </div>
                 
                 
@@ -58,7 +58,7 @@
                         <div class="card "  style="background-color: #dfe1f5;" >
                             <div class="row">
                             <div i class="card-body d1 col-sm-8 " >
-                                <h3  style="font-weight: 900;color: #0080ff">Welcome Divyam Arora!</h3><br>Please check your dashboard for further queries</div>
+                                <h3 id = "title" style="font-weight: 900;color: #0080ff"></h3><br>Please check your dashboard for further queries</div>
                             <div class="col-sm-4"><img class="img-responsive" style="height:150px;width:200px;float:right" src="img/upteacher.jpeg"></div>
                             </div>
                         </div>
@@ -174,6 +174,19 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
     <script src="assets/js/theme.js"></script>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.21.1/firebase-app.js"></script>
+
+    <script src="/__/firebase/7.21.1/firebase-auth.js"></script>
+    <script src="/__/firebase/7.21.1/firebase-firestore.js"></script>
+    <script src="/__/firebase/7.21.1/firebase-functions.js"></script>
+    <script src="/__/firebase/7.21.1/firebase-analytics.js"></script>
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <!-- <script src="js/auth.js"></script> -->
+    <script src="js/app.js"></script>
 </body>
 
 </html>
