@@ -200,3 +200,31 @@ label{
     
     
 }
+.suba{
+    height: 290px;
+    width: 100%;
+    margin-top: 30px;
+    border: 3px solid #fc765b;
+    
+    border-radius: 10px;
+    
+}
+.suba1{
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #fc765b;
+}
+.sa1{
+    background-color: #fc765b;
+    color: white;
+
+    border-top-left-radius: 5px;
+    
+    
+}
+.sa2{
+    background-color: #fce5e1;
+    color: #fc765b;
+    
+    
+}
