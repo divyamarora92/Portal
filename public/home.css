@@ -172,3 +172,31 @@ label{
 .scrollbar::-webkit-scrollbar-thumb:hover,#prevlectures::-webkit-scrollbar-thumb:hover {
   background: ; 
 }
+.sub{
+    height: 290px;
+    width: 100%;
+    margin-top: 30px;
+    border: 3px solid #70d4d4;
+    
+    border-radius: 10px;
+    
+}
+.sub1{
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #32b8b8;
+}
+.s1{
+    background-color: #7bd4a6;
+    color: white;
+
+    border-top-left-radius: 5px;
+    
+    
+}
+.s2{
+    background-color: #dff5e9;
+    color: #7bd4a6;
+    
+    
+}
