@@ -1,4 +1,6 @@
-
+.card{
+    box-shadow:0 0 3px rgba(0 ,0 ,0 ,0.1 );
+}
 .d5
 {
     height:100px;
@@ -96,7 +98,50 @@ input[type=submit]:hover {
     
    
 }
-sbtn{
+input[type=submit]:focus{
+    box-shadow: 0 0 6px #e88935;
+    outline: none;
+} 
+input[type=text]:focus{
+    box-shadow: 0 0 3px #e88935;
+    outline: none;
+    
+} 
+input[type=password]:focus{
+    box-shadow: 0 0 3px #e88935;
+    outline: none;
+} 
+.teacherLogin input[type=submit]:focus{
+    box-shadow: 0 0 6px blue;
+    outline: none;
+}
+.teacherLogin input[type=text]:focus{
+    box-shadow: 0 0 3px blue;;
+    outline: none;
+    
+} 
+.teacherLogin input[type=password]:focus{
+    box-shadow: 0 0 3px blue;
+    outline: none;
+}
+.teacherRegister input[type=submit]:focus{
+    box-shadow: 0 0 6px blue;
+    outline: none;
+}
+.teacherRegister input[type=text]:focus{
+    box-shadow: 0 0 3px blue;;
+    outline: none;
+    
+} 
+.teacherRegister input[type=password]:focus{
+    box-shadow: 0 0 3px blue;
+    outline: none;
+}
+
+.sbtn:focus{
+    outline: none;
+}
+.tbtn:focus{
     outline: none;
 }
 .sbtn:hover{
@@ -230,4 +275,10 @@ label{
     color: #fc765b;
     
     
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
 }
