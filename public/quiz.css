@@ -47,6 +47,7 @@
 
 .hud-main-text {
     text-align: center;
+    color: white;
 }
 
 /* Progress Bar */
@@ -54,13 +55,13 @@
 #progressBar {
     width: 20rem;
     height: 4rem;
-    border: 0.3rem solid #56a5eb;
+    border: 0.3rem solid white;
     margin-top: 1.5rem;
 }
 
 #progressBarFull {
     height: 3.4rem;
-    background-color: #56a5eb;
+    background-color: white;
     width: 0%;
 }
 
