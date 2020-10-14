@@ -15,7 +15,7 @@ firebase.firestore().collection('quiz').add({
     choice3:option3,
     choice4:option4,
     answer:correct,
-})
+}).then(() => window.location.href = "quizMaking.html");
 
 }
 
