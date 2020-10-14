@@ -1,7 +1,9 @@
 const studentRegisterForm = document.querySelector('.studentRegister');
 const studentLoginForm = document.querySelector('.studentLogin');
+
 const teacherRegisterForm = document.querySelector('.teacherRegister');
 const teacherLoginForm = document.querySelector('.teacherLogin');
+
 
 // student register form
 studentRegisterForm.addEventListener('submit', (e) => {
@@ -62,6 +64,7 @@ studentLoginForm.addEventListener('submit', (e) => {
         studentLoginForm.querySelector('.error').textContent = error.message;
       });
   });
+
 
 
 
@@ -126,6 +129,7 @@ studentLoginForm.addEventListener('submit', (e) => {
         studentLoginForm.querySelector('.error').textContent = error.message;
       });
   });
+
 
   // checking if already logged in
 

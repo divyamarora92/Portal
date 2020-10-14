@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
 </head>
 
 <body id="page-top">
@@ -30,9 +30,9 @@
                 <br>
                 <hr class="sidebar-divider my-0">
                 <ul class="nav navbar-nav text-primary " id="accordionSidebar" >
-                     <li class="nav-item"><a class="nav-link " href="index.html"><i class="fas fa-tachometer-alt mr-2 ml-4" style="color: blue; font-size: 120%" ></i><span class="child"><b>Dashboard</b></span></a></li>
-                   <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-user-friends mr-2 ml-4" style="color: blue; font-size: 120%"></i><span  class="child"><b>Faculties</b></span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-book-open mr-2 ml-4" style="color: blue; font-size: 120%"></i><span  class="child" ><b>Classes</b></span></a></li>
+                     <li class="nav-item"><a class="nav-link " href="home.html"><i class="fas fa-tachometer-alt mr-2 ml-4" style="color: blue; font-size: 120%" ></i><span class="child"><b>Dashboard</b></span></a></li>
+                   <li class="nav-item"><a class="nav-link" href="facultylist.html"><i class="fas fa-user-friends mr-2 ml-4" style="color: blue; font-size: 120%"></i><span  class="child"><b>Faculties</b></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="class.html"><i class="fas fa-book-open mr-2 ml-4" style="color: blue; font-size: 120%"></i><span  class="child" ><b>Classes</b></span></a></li>
                     
                     
                     <li class="nav-item"><a class="nav-link" href="profile.html"><i class="far fa-comment-alt mr-2 ml-4" style="color: blue; font-size: 120%"></i><span class="child" ><b>Chats</b></span></a></li>
@@ -53,39 +53,85 @@
             <div id="content">
             <div class="container-fluid" style="background-color: white; ">
                 <div class="row">
-                    <div class="col-sm-9 pt-2" style="background-color: whitesmoke; height: 800px;">
+                    <div class="col-sm-9" style="background-color: whitesmoke; ">
                         <br>
-                        <h3 class="ml-3"><b>Experiment Submission</b></h3>
-                        <div class="card ml-2 mr-2  pl-5 pt-5 pr-5" style="height: 600px">
-                            <center><div class="sub p-0">
-                                <div class="row sub1 m-0 p-0">
-                                    <div class="col-2 p-0 sb1">
-                                        <h6><b>Submission</b></h6>
-                                    </div>
-                                    <div class="col-2 p-0 sb2">
-                                        <h6><b>View Submission</b></h6>
-                                    </div>
-                                    <div class="col-8">
-                                        
-                                    </div>
-
-                                    <input type = "file" id="uploader">
-
+                        <h3 class="ml-3"><b>Quiz Results</b></h3>
+                        <div class="card pl-5 pt-5 pr-5">
+                            <div class=row>
+                                <div class="card-body col-sm-3 pt-1 pl-5">
+                                    <h2 style="color: #f77765"><b>Quiz 1</b></h2>
+                                    <p>Score 5.5/10</p>
                                 </div>
-                                <center><img src="img/file.svg" height="250px" width="100px"></center>
+                                <div class="card-body col-sm-6">
+                                    <div class="mt-2 w3-round-xlarge" style="background-color:#edf5fa;border-radius: 15px;">
+                                    <div class="w3-center w3-round-xlarge" style="height:24px;width:75%;background-color:#41a7f0;color: white;border-radius: 15px;"><center>75%</center></div>
+                                    </div>
+                                </div>
+                                <div class="card-body col-sm-3 pl-5">
+                                    <a href="#" style="color: #4ad4ad"><h5>View Questions</h5></a>
+                                </div>
+                            
+                            
+                            </div>
+                            <hr>
+                            <div class=row>
+                                <div class="card-body col-sm-3 pt-1 pl-5">
+                                    <h2 style="color: #f77765"><b>Quiz 2</b></h2>
+                                    <p>Score 5.5/10</p>
+                                </div>
+                               <div class="card-body col-sm-6">
+                                    <div class=" mt-2 w3-round-xlarge" style="background-color:#edf5fa;border-radius: 15px;">
+                                    <div class="w3-center w3-round-xlarge" style="height:24px;width:75%;background-color:#41a7f0;color: white;border-radius: 15px;"><center>75%</center></div>
+                                    </div>
+                                </div>
+                                <div class="card-body col-sm-3 pl-5">
+                                    <a href="#" style="color: #4ad4ad"><h5>View Questions</h5></a>
+                                </div>   
+                            
+                            
+                            </div>
+                            <hr>
+                            <div class=row>
+                                <div class="card-body col-sm-3 pt-1 pl-5">
+                                    <h2 style="color: #f77765"><b>Quiz 3</b></h2>
+                                    <p>Score 5.5/10</p>
+                                </div>
+                                <div class="card-body col-sm-6">
+                                    <div class=" mt-2 w3-round-xlarge" style="background-color:#edf5fa;border-radius: 15px;">
+                                    <div class="w3-center w3-round-xlarge" style="height:24px;width:75%;background-color:#41a7f0;color: white;border-radius: 15px;"><center>75%</center></div>
+                                    </div>
+                                </div>
+                                <div class="card-body col-sm-3 pl-5">
+                                    <a href="#" style="color: #4ad4ad"><h5>View Questions</h5></a>
+                                </div>   
+                            
+                            
+                            </div>
+                            <hr>
+                            <div class=row>
+                                <div class="card-body col-sm-3 pt-1 pl-5">
+                                    <h2 style="color: #f77765"><b>Quiz 4</b></h2>
+                                    <p>Score 5.5/10</p>
+                                </div>
+                                <div class="card-body col-sm-6">
+                                    <div class=" mt-2 w3-round-xlarge" style="background-color:#edf5fa;border-radius: 15px;">
+                                    <div class="w3-center w3-round-xlarge" style="height:24px;width:75%;background-color:#41a7f0;color: white; border-radius: 15px;"><center>75%</center></div>
+                                    </div>
+                                </div>
+                                <div class="card-body col-sm-3 pl-5">
+                                    <a href="#" style="color: #4ad4ad"><h5>View Questions</h5></a>
+                                </div>    
+                            
+                            
+                            </div>
+                            
+                          
+                            
+                            
+                            
                                 
                             
-                                </div></center>  
-                            <br>
-                            <br>
-                            <br>
-                            
-
-                            <center><button type="button" class="btn btn-lg" onClick="show()" style="background-color:#70d4d4; color: white; "><i></i><b>Submit</b><i class="fa fa-cloud-upload mr-2 ml-2" style="color: white; font-size: 120%" ></i></button>
-
-                            
-                            <button type="button" class="btn btn-lg ml-3" style="background-color:#66bda8; color: white; "><i></i><b>Upload</b><i class="fa fa-refresh mr-2 ml-2" style="color: white; font-size: 120%" ></i></button></center>
-                         </div>
+                        </div>
                         
                         
                         
@@ -140,17 +186,11 @@
 
     <script src="/__/firebase/7.21.1/firebase-auth.js"></script>
     <script src="/__/firebase/7.21.1/firebase-firestore.js"></script>
-
-    <script src="/__/firebase/7.21.1/firebase-storage.js"></script>
-
     <script src="/__/firebase/7.21.1/firebase-functions.js"></script>
     <script src="/__/firebase/7.21.1/firebase-analytics.js"></script>
 
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
-
-    <script src="js/uploadingData.js"></script>
-
 </body>
 
 </html>

@@ -1,8 +1,10 @@
 const studentReference = firebase.firestore().collection('students');
+
 const teacherReference = firebase.firestore().collection('teachers');
 const title = document.getElementById('title');
 var uniqueId;
 var teacherId;
+
 
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
@@ -13,6 +15,7 @@ firebase.auth().onAuthStateChanged((user) => {
 studentReference.onSnapshot(snapshot => {
     
     snapshot.forEach(doc => {
+
         console.log(doc.data().name);
         if(doc.id === uniqueId){
         console.log(doc.data().name);
@@ -31,6 +34,7 @@ teacherReference.onSnapshot(snapshot => {
     
     snapshot.forEach(doc => {
         if(doc.id === teacherId){
+
         console.log(doc.data().name)
         renderName(doc.data().name);
         }
@@ -45,13 +49,17 @@ function renderName(lname){
 
 
 
+
 //signout 
+
 function signOut(){
     firebase.auth().signOut()
         .then(() => {
           console.log('signed out')
           window.location.href = "index.html";
         });
+
   }
 
   
+
