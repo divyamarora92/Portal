@@ -14,10 +14,17 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="home.css">
+
+    <link rel="stylesheet" href="loader.css">
+    <script src="loader.js"></script>
 </head>
 
 <body id="page-top">
+    <div id="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar"><img class="icon" src="https://raziraz.github.io/codepen/img/bolt.svg">
+    </div>
     <div id="wrapper">
+        
+
 <!--SIDE BAR-->
          <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion  p-0">
             <div class="container-fluid d-flex flex-column p-0">
@@ -29,7 +36,9 @@
                 <br>
                 <hr class="sidebar-divider my-0">
                 <ul class="nav navbar-nav text-primary " id="accordionSidebar" >
-                     <li class="nav-item"><a class="nav-link " href="index.html"><i class="fas fa-tachometer-alt mr-2 ml-4" style="color: blue; font-size: 120%" ></i><span class="child"><b>Dashboard</b></span></a></li>
+
+                     <li class="nav-item"><a class="nav-link " href="home.html"><i class="fas fa-tachometer-alt mr-2 ml-4" style="color: blue; font-size: 120%" ></i><span class="child"><b>Dashboard</b></span></a></li>
+
                     <li class="nav-item"><a class="nav-link" href="facultylist.html"><i class="fas fa-user-friends mr-2 ml-4" style="color: blue; font-size: 120%"></i><span  class="child"><b>Faculties</b></span></a></li>
                     <li class="nav-item"><a class="nav-link" href="class.html"><i class="fas fa-book-open mr-2 ml-4" style="color: blue; font-size: 120%"></i><span  class="child" ><b>Classes</b></span></a></li>
                     
@@ -67,8 +76,11 @@
                         <h5><b>Session 2020-2021</b></h5>
                         <div class="card-columns">
                             <div class="card">
+
+                                <a href="webtech.html">
                                 <div class="card-body rounded">
-                                    <h4 class="card-title text-success">Web Technology</h4>
+                                    <h4 class="card-title text-success">Mathematics</h4>
+
                                     <p class="card-text">Progress
                                         <div class="progress">
                                             <div class="progress-bar bg-success" style="width:70%"></div>
@@ -77,10 +89,14 @@
                                     <ul><li>Assingment 1</li><li>Assingment 2</li></ul>
                                     </p>
                                 </div>
+
+                                </a>
                             </div>
                             <div class="card">
+                                <a href="webtech.html">
                                 <div class="card-body">
-                                    <h4 class="card-title text-warning">Data Structure</h4>
+                                    <h4 class="card-title text-warning">Physics</h4>
+
                                     <p class="card-text">Progress
                                         <div class="progress">
                                             <div class="progress-bar bg-warning" style="width:70%"></div>
@@ -89,10 +105,14 @@
                                     <ul><li>Assingment 1</li><li>Assingment 2</li></ul>
                                     </p>
                                 </div>
+
+                                </a>
                             </div>
                             <div class="card">
+                                <a href="webtech.html">
                                 <div class="card-body">
-                                    <h4 class="card-title text-primary">DAA</h4>
+                                    <h4 class="card-title text-primary">Chemistry</h4>
+
                                     <p class="card-text">Progress
                                         <div class="progress">
                                             <div class="progress-bar bg-primary" style="width:70%"></div>
@@ -101,10 +121,14 @@
                                     <ul><li>Assingment 1</li><li>Assingment 2</li></ul>
                                     </p>
                                 </div>
+
+                                </a>
                             </div>
                             <div class="card">
+                                <a href="webtech.html">
                                 <div class="card-body">
-                                    <h4 class="card-title text-danger">DBMS</h4>
+                                    <h4 class="card-title text-danger">English</h4>
+
                                     <p class="card-text">Progress
                                         <div class="progress">
                                             <div class="progress-bar bg-danger" style="width:70%"></div>
@@ -113,11 +137,14 @@
                                     <ul><li>Assingment 1</li><li>Assingment 2</li></ul>
                                     </p>
                                 </div>
+
+                                </a>
                             </div>  
                             <div class="card">
+                                <a href="webtech.html">
                                 <div class="card-body">
-                                    <h4 class="card-title" style="color: deeppink">Machine Learning</h4>
-                                    <p class="card-text">Progress
+                                    <h4 class="card-title" style="color: deeppink">Python</h4>
+                     <p class="card-text">Progress
                                         <div class="progress">
                                             <div class="progress-bar" style="width:70%;background-color: deeppink"></div>
                                             </div>
@@ -125,10 +152,14 @@
                                     <ul><li>Assingment 1</li><li>Assingment 2</li></ul>
                                     </p>
                                 </div>
+
+                                </a>
                             </div>
                             <div class="card">
+                                <a href="webtech.html">
                                 <div class="card-body">
-                                    <h4 class="card-title">COA</h4>
+                                    <h4 class="card-title">SoftSkills</h4>
+
                                     <p class="card-text">Progress
                                         <div class="progress">
                                             <div class="progress-bar bg-dark" style="width:70%"></div>
@@ -137,6 +168,9 @@
                                     <ul><li>Assingment 1</li><li>Assingment 2</li></ul>
                                     </p>
                                 </div>
+
+                                </a>    
+
                             </div>
                         </div>
     
@@ -150,13 +184,17 @@
                             <div class="card-body pr-3 pl-3 " style="background-color:lightgrey">
                                 <h5 align="center"><em><b>Upcoming Events</b></em></h5><br>
                                 <ol>
-                                    <li>DAA(Assingment 3 pending)</li>
+
+                                    <!-- <li>DAA(Assingment 3 pending)</li>
+
                                     <hr>
                                     <li>DAA(Assingment 3 pending)</li>
                                     <hr>
                                     <li>DAA(Assingment 3 pending)</li>
                                     <hr>
-                                    <li>DAA(Assingment 3 pending)</li>
+
+                                    <li>DAA(Assingment 3 pending)</li> -->
+
                                     
                                 </ol>
                             </div>
