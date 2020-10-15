@@ -3,6 +3,7 @@ const studentLoginForm = document.querySelector('.studentLogin');
 
 const teacherRegisterForm = document.querySelector('.teacherRegister');
 const teacherLoginForm = document.querySelector('.teacherLogin');
+var msg = "Username or Password Incorrect";
 
 
 // student register form
@@ -61,7 +62,7 @@ studentLoginForm.addEventListener('submit', (e) => {
         window.location.href = "home.html";
       })
       .catch(error => {
-        studentLoginForm.querySelector('.error').textContent = error.message;
+        studentLoginForm.querySelector('.error').textContent = msg;
       });
   });
 
@@ -126,7 +127,8 @@ studentLoginForm.addEventListener('submit', (e) => {
         window.location.href = "faculty.html";
       })
       .catch(error => {
-        studentLoginForm.querySelector('.error').textContent = error.message;
+        
+        studentLoginForm.querySelector('.error').textContent = msg;
       });
   });
 
