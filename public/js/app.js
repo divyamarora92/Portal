@@ -1,7 +1,8 @@
 const studentReference = firebase.firestore().collection('students');
-
+const subjects = firebase.firestore().collection('subjects');
 const teacherReference = firebase.firestore().collection('teachers');
 const title = document.getElementById('title');
+const subjectTitle = document.getElementById('subjectTitle');
 var uniqueId;
 var teacherId;
 
